@@ -5,9 +5,9 @@ body {
   font-family: Calibri;
 }
 .head {
-  background-color: gray;
-  background-blend-mode: lighten;
+  background-color: lightgray;
 }
+
 .well-lg {
   background-color: lightgrey;
 }
