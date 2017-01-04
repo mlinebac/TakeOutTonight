@@ -1,4 +1,13 @@
 body {
-  padding-top: 50px;
+  padding-top: 10px;
   padding-bottom: 20px;
+  background: floralwhite;
+  font-family: Calibri;
+}
+.head {
+  background-color: gray;
+  background-blend-mode: lighten;
+}
+.well-lg {
+  background-color: lightgrey;
 }
