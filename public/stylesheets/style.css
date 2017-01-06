@@ -1,7 +1,15 @@
+.jumbotron{
+  background: dimgray;
+  font-family: Calibri;
+  color: whitesmoke;
+}
 body {
   padding-top: 10px;
   padding-bottom: 20px;
-  background: floralwhite;
+  background: gray;
   font-family: Calibri;
+  color: whitesmoke;
 }
-
+.mail{
+  padding-top:20px;
+}

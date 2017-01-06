@@ -11,17 +11,16 @@ html(lang='en')
     link(href='/css/bootstrap.min.css', rel='stylesheet')
 
   body
-    .jumbotron
-      .head
+    .container
+      .jumbotron
         h1 TakeOutTonight
         p Welcome to TakeOutTonight... A simple web app for ordering dinner.
-      .well-lg
+        .page-header
         h2 How to Order
-        .well-sm
         p Select the PayPal 'add to cart' button below each dinner item to order your dinner.
         p When you're finished adding items to your cart, submit your payment using your PayPal account or a guest account.
         p Then send a message saying what days you would like your meals delivered.
-        .well-sm
+        .page-header
         h3 That's it you're done!
     .container
       .row
@@ -60,18 +59,22 @@ html(lang='en')
               ')
               input(type='image', src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif', border='0', name='submit', alt='PayPal - The safer, easier way to pay online!')
               img(alt='', border='0', src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif', width='1', height='1')
-      .well-sm
-        a.btn.btn-info(href= 'mailto:aliamtodd@gmail.com', role= 'button') Send Message
-          span.glyphicon.glyphicon-envelope(aria-hidden='true')
+    .container
+      .row
+        .col-md-12
+          a.btn.btn-info(href= 'mailto:aliamtodd@gmail.com', role= 'button') Send Message
+            span.glyphicon.glyphicon-envelope(aria-hidden='true')
       hr
       footer
-      .well-sm
-        h2 Local Weather Station
-        object(width='290', height='130')
-          param(name='movie', value='http://www.wunderground.com/swf/pws_mini_rf_nc.swf?station=KNCASHEV76&freq=&units=english&lang=EN')
-          embed(src='http://www.wunderground.com/swf/pws_mini_rf_nc.swf?station=KNCASHEV76&freq=&units=english&lang=EN',
-          type='application/x-shockwave-flash', width='290', height='130')
-          p Website created by Matt Lineback
+        .container
+          .row
+            .col-md-12
+            object(width='290', height='130')
+            param(name='movie', value='http://www.wunderground.com/swf/pws_mini_rf_nc.swf?station=KNCASHEV76&freq=&units=english&lang=EN')
+            embed(src='http://www.wunderground.com/swf/pws_mini_rf_nc.swf?station=KNCASHEV76&freq=&units=english&lang=EN',
+            type='application/x-shockwave-flash', width='290', height='130')
+            .row
+              p Website created by Matt Lineback
 
     script(src='javascripts/jquery.min.js')
     script(src='javascripts/bootstrap.min.js')
