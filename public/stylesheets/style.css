@@ -1,15 +1,26 @@
-.jumbotron{
-  background: dimgray;
-  font-family: Calibri;
-  color: whitesmoke;
-}
 body {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  background: gray;
-  font-family: Calibri;
-  color: whitesmoke;
-}
-.mail{
-  padding-top:20px;
-}
+ 	font-family: Calibri;
+ 	color: whitesmoke;
+ 	background-color: dimgray;
+	}
+
+#title.container-fluid{
+	padding-top: 3%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-image: url(images/kitchen-731351_960_720.jpg) ;
+	
+	}
+.jumbotron{
+  	background: dimgray;
+  	opacity: 0.85;
+  	font-family: Calibri;
+  	color: whitesmoke;
+	}
+#dinner.container-fluid{
+	background-image: url(images/cooking-1013455.jpg);
+	opacity: 0.85;
+	}
+#mail.container-fluid{
+  	padding-top:20px;
+	}
