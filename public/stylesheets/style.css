@@ -5,22 +5,43 @@ body {
 	}
 
 #title.container-fluid{
-	padding-top: 3%;
-	padding-left: 5%;
-	padding-right: 5%;
-	background-image: url(images/kitchen-731351_960_720.jpg) ;
-	
+	background-image: url(images/kitchen-731351_960_720.jpg);
+    height: 640px;
+    width: 960px;
 	}
 .jumbotron{
   	background: dimgray;
   	opacity: 0.85;
   	font-family: Calibri;
   	color: whitesmoke;
+    padding: 8%;
+    margin: 4%;
+
 	}
 #dinner.container-fluid{
-	background-image: url(images/cooking-1013455.jpg);
-	opacity: 0.85;
+	background-image: url(images/cooking-1013455.png);
+    padding-top: 3%;
+    padding-bottom: 2%;
+    opacity: 0.90;
+    height: 640px;
+    width: 960px;
 	}
+
+.col-md-4 {
+    background: dimgray;
+    opacity: 0.85;
+    font-family: Calibri;
+    color: whitesmoke;
+    margin-right: 8%;
+    margin-left: 8%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 #mail.container-fluid{
-  	padding-top:20px;
+    width: 960px;
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right:3%;
+    background-color: #444444;
 	}
