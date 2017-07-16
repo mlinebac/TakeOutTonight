@@ -2,6 +2,7 @@ body {
  	font-family: Calibri;
  	color: whitesmoke;
  	background-color: dimgray;
+    background: radial-gradient(black,whitesmoke) ;
 	}
 
 #title.container-fluid{
@@ -9,15 +10,16 @@ body {
     height: 640px;
     width: 960px;
 	}
+
 .jumbotron{
   	background: dimgray;
   	opacity: 0.85;
   	font-family: Calibri;
   	color: whitesmoke;
     padding: 8%;
-    margin: 4%;
-
+    margin:4%;
 	}
+
 #dinner.container-fluid{
 	background-image: url(images/cooking-1013455.png);
     padding-top: 3%;
@@ -45,3 +47,42 @@ body {
     padding-right:3%;
     background-color: #444444;
 	}
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    display:block;
+    margin: 0 auto;
+    left: 20%;
+
+
+}
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
