@@ -6,7 +6,7 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(name='Take Out Tonight is an app designed for taking dinner orders', content='')
     meta(name='Matt Lineback', content='')
-    link(rel='icon', href='../../favicon.ico')
+    link(rel='icon', href='/public/favicon.ico')
     title Take Out Tonight
     link(href='/css/bootstrap.min.css', rel='stylesheet')
 
@@ -82,6 +82,55 @@ html(lang='en')
               ')
               input(type='image', src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif', border='0', name='submit', alt='PayPal - The safer, easier way to pay online!')
               img(alt='', border='0', src='https://www.paypalobjects.com/en_US/i/scr/pixel.g', width='1', height='1')
+    #form.container-fluid
+      .row
+        .center
+          .col-md-6.col-sm-6.col-xs-12
+            form(method='post', action = "", id = "newForm")
+              .form-group
+                label.control-label(for='name')
+                  | Name
+                input#name.form-control(name='name', type='text')
+              .form-group
+                label.control-label.requiredField(for='email')
+                  | Email
+                  span.asteriskField
+                    | *
+                input#email.form-control(name='email', type='text')
+              .form-group
+                label.control-label(for='select')
+                  | Select a Choice
+                select#select.select.form-control(name='select')
+                  option(value='First Choice')
+                    | First Choice
+                  option(value='Second Choice')
+                    | Second Choice
+                  option(value='Third Choice')
+                    | Third Choice
+              .form-group
+                label.control-label
+                  | Select a Choice
+                div
+                  .radio
+                    label.radio
+                      input(name='radio', type='radio', value='First Choice')
+                      |          First Choice
+                  .radio
+                    label.radio
+                      input(name='radio', type='radio', value='Second Choice')
+                      |          Second Choice
+                  .radio
+                    label.radio
+                      input(name='radio', type='radio', value='Third Choice')
+                      |          Third Choice
+              .form-group
+                label.control-label(for='message')
+                  | Message
+                textarea#message.form-control(cols='40', name='message', rows='10')
+              .form-group
+                div
+                  button.btn.btn-primary(name='submit', type='submit')
+                    | Submit
 
     #mail.container-fluid
       .row

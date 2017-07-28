@@ -38,6 +38,18 @@ body {
     margin-top: 2%;
     margin-bottom: 2%;
 }
+#form.container-fluid{
+    background:black;
+    background: linear-gradient(black, #444444 );
+    width: 960px;
+    padding-top: 5%;
+    
+}
+
+.center{
+    margin: 0 auto;
+    width:70%;
+}
 
 #mail.container-fluid{
     width: 960px;
@@ -62,7 +74,7 @@ body {
     position: absolute;
     z-index: 1;
     opacity: 1;
-    bottom:-5%;
+    bottom:0%;
     left:20%
 }
 /* Toggle this class - hide and show the popup */

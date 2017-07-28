@@ -7,15 +7,22 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-
+var admin = require('firebase-admin');
 var app = express();
+var serviceAccount = require ("./node_modules/TakeOutTonight/TakeOutTonight-7d991d3a4376.json");
+
+//firebase setup
+admin.initializeApp({
+   credential: admin.credential.cert(serviceAccount),
+   databaseURL: "https://takeouttonight-a60b0.firebaseio.com"
+    });
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
