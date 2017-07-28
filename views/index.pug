@@ -110,7 +110,7 @@ html(lang='en')
               .form-group
                 label.control-label
                   | Select a Choice
-                div
+                div#radio
                   .radio
                     label.radio
                       input(name='radio', type='radio', value='First Choice')
@@ -129,7 +129,7 @@ html(lang='en')
                 textarea#message.form-control(cols='40', name='message', rows='10')
               .form-group
                 div
-                  button.btn.btn-primary(name='submit', type='submit')
+                  button.btn.btn-primary(id = 'submitForm', name='submitForm', type='submit')
                     | Submit
 
     #mail.container-fluid
