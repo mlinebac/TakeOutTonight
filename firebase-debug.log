@@ -1,0 +1,36 @@
+[debug] [2017-07-29T05:49:11.977Z] ----------------------------------------------------------------------
+[debug] [2017-07-29T05:49:11.979Z] Command:      /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-07-29T05:49:11.980Z] CLI Version:  3.9.1
+[debug] [2017-07-29T05:49:11.980Z] Platform:     linux
+[debug] [2017-07-29T05:49:11.980Z] Node Version: v8.1.2
+[debug] [2017-07-29T05:49:11.980Z] Time:         Sat Jul 29 2017 01:49:11 GMT-0400 (EDT)
+[debug] [2017-07-29T05:49:11.980Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-07-29T05:49:11.991Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-07-29T05:49:11.991Z] > authorizing via signed-in user
+[debug] [2017-07-29T05:49:11.994Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-07-29T05:49:11.995Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/t5hVYLmhbjdFmJ4ZFSCVFNkwfmMIa7k4fanvrSMLIZRMP7GvRq7oPh9Ydp9PYpbT',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Jul 29 2017 01:49:11 GMT-0400 (EDT)
+[debug] [2017-07-29T05:49:12.320Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-29T05:49:12.358Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/takeouttonight-a60b0  
+ Sat Jul 29 2017 01:49:12 GMT-0400 (EDT)
+[debug] [2017-07-29T05:49:12.871Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-29T05:49:12.872Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/takeouttonight-a60b0/tokens  
+ Sat Jul 29 2017 01:49:12 GMT-0400 (EDT)
+[debug] [2017-07-29T05:49:13.241Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/matt/TakeOutTonight'...
+[info] 
+[debug] [2017-07-29T05:49:13.247Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/takeouttonight-a60b0  
+ Sat Jul 29 2017 01:49:13 GMT-0400 (EDT)
+[debug] [2017-07-29T05:49:13.602Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-29T05:49:13.603Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/78398501206/clients/_:getWebAppConfig  
+ Sat Jul 29 2017 01:49:13 GMT-0400 (EDT)
+[debug] [2017-07-29T05:49:14.089Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-29T05:49:14.257Z] TypeError: Cannot read property 'public' of undefined
+[error] 
+[error] Error: An unexpected error has occurred.
