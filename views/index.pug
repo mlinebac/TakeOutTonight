@@ -26,7 +26,7 @@ html(lang='en')
       .row
         .col-md-4
           .block
-            div.popup(onclick = 'myFunction()')
+            div.popup(onclick = 'popupFunction()')
               h2 Sweet and Sour Tofu
               p
                 | Crispy fried tofu tossed in sweet and sour sauce. Served with wok seared broccoli and peppers, and steamed Jasmine Rice
@@ -86,21 +86,21 @@ html(lang='en')
       .row
         .center
           .col-md-6.col-sm-6.col-xs-12
-            form(method='post', action = "", id = "newForm")
+            form#order-form.orderForm(onsubmit="return sendForm(this)")
               .form-group
                 label.control-label(for='name')
                   | Name
-                input#name.form-control(name='name', type='text')
+                input#name.form-control(name='name')
               .form-group
                 label.control-label.requiredField(for='email')
                   | Email
                   span.asteriskField
                     | *
-                input#email.form-control(name='email', type='text')
+                input#email.form-control(name='email', type='email')
               .form-group
                 label.control-label(for='select')
                   | Select a Choice
-                select#select.select.form-control(name='select')
+                select#select.form-control(name='select')
                   option(value='First Choice')
                     | First Choice
                   option(value='Second Choice')
@@ -129,7 +129,7 @@ html(lang='en')
                 textarea#message.form-control(cols='40', name='message', rows='10')
               .form-group
                 div
-                  button.btn.btn-primary(name='submitForm', type='submit')
+                  button#send-button.btn.btn-primary(name='submitForm')
                     | Submit
 
     #mail.container-fluid
@@ -143,7 +143,7 @@ html(lang='en')
     script(src='javascripts/popup.js')
     script(src='javascripts/jquery.min.js')
     script(src='javascripts/bootstrap.min.js')
-    script(src='../javascripts/message.js')
+    script(src='javascripts/form.js')
     link(href='/stylesheets/style.css', rel='stylesheet')
 
 
