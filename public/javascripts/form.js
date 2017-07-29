@@ -21,5 +21,5 @@
         });
     }
 
-    var submit = document.getElementByTagName('button')[0];
+    var submit = document.getElementsByTagName('button')[0];
     submit.onclick = sendForm;
