@@ -3,7 +3,7 @@
     var sendButton = document.getElementById('send-button');
 
     function sendForm (formObj){
-        var firebaseRef = firebase.database().ref('orders/');
+        var firebaseRef = firebase.database().ref();
         firebaseRef.push({
             name: formObj.name.value,
             email: formObj.email.value,
