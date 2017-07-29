@@ -3,7 +3,7 @@ $(function () {
     //data variable to keep track of data from Firebase
     var data = [];
 
-    var ref = new Firebase('https://takeouttonight-a60b0.firebaseio.com/form');
+    var ref = firebase.database().ref('https://takeouttonight-a60b0.firebaseio.com/form');
 
     ref.on("value", function(snapshot){
 
@@ -11,7 +11,7 @@ $(function () {
 
         //putting updated data from Firebase into data variable
         data = snapshot.val();
-    })
+    });
 
     $('#newForm').submit(function(event){
         var $form = $(this);

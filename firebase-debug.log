@@ -1,36 +1,36 @@
-[debug] [2017-07-26T15:47:03.983Z] ----------------------------------------------------------------------
-[debug] [2017-07-26T15:47:03.986Z] Command:      /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2017-07-26T15:47:03.986Z] CLI Version:  3.9.1
-[debug] [2017-07-26T15:47:03.986Z] Platform:     linux
-[debug] [2017-07-26T15:47:03.986Z] Node Version: v8.1.2
-[debug] [2017-07-26T15:47:03.986Z] Time:         Wed Jul 26 2017 11:47:03 GMT-0400 (EDT)
-[debug] [2017-07-26T15:47:03.986Z] ----------------------------------------------------------------------
+[debug] [2017-07-29T00:36:57.355Z] ----------------------------------------------------------------------
+[debug] [2017-07-29T00:36:57.358Z] Command:      /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-07-29T00:36:57.358Z] CLI Version:  3.9.1
+[debug] [2017-07-29T00:36:57.358Z] Platform:     linux
+[debug] [2017-07-29T00:36:57.358Z] Node Version: v8.1.2
+[debug] [2017-07-29T00:36:57.359Z] Time:         Fri Jul 28 2017 20:36:57 GMT-0400 (EDT)
+[debug] [2017-07-29T00:36:57.359Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2017-07-26T15:47:03.998Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2017-07-26T15:47:03.998Z] > authorizing via signed-in user
-[debug] [2017-07-26T15:47:04.001Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2017-07-26T15:47:04.001Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/t5hVYLmhbjdFmJ4ZFSCVFNkwfmMIa7k4fanvrSMLIZRMP7GvRq7oPh9Ydp9PYpbT',
+[debug] [2017-07-29T00:36:57.370Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-07-29T00:36:57.370Z] > authorizing via signed-in user
+[debug] [2017-07-29T00:36:57.373Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-07-29T00:36:57.373Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/t5hVYLmhbjdFmJ4ZFSCVFNkwfmMIa7k4fanvrSMLIZRMP7GvRq7oPh9Ydp9PYpbT',
   client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
   client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
   grant_type: 'refresh_token',
   scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Wed Jul 26 2017 11:47:04 GMT-0400 (EDT)
-[debug] [2017-07-26T15:47:04.298Z] <<< HTTP RESPONSE 200
-[debug] [2017-07-26T15:47:04.355Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/takeouttonight-a60b0  
- Wed Jul 26 2017 11:47:04 GMT-0400 (EDT)
-[debug] [2017-07-26T15:47:04.801Z] <<< HTTP RESPONSE 200
-[debug] [2017-07-26T15:47:04.802Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/takeouttonight-a60b0/tokens  
- Wed Jul 26 2017 11:47:04 GMT-0400 (EDT)
-[debug] [2017-07-26T15:47:05.282Z] <<< HTTP RESPONSE 200
+ Fri Jul 28 2017 20:36:57 GMT-0400 (EDT)
+[debug] [2017-07-29T00:36:57.661Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-29T00:36:57.884Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/takeouttonight-a60b0  
+ Fri Jul 28 2017 20:36:57 GMT-0400 (EDT)
+[debug] [2017-07-29T00:36:58.441Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-29T00:36:58.443Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/takeouttonight-a60b0/tokens  
+ Fri Jul 28 2017 20:36:58 GMT-0400 (EDT)
+[debug] [2017-07-29T00:36:58.980Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/home/matt/TakeOutTonight'...
 [info] 
-[debug] [2017-07-26T15:47:05.289Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/takeouttonight-a60b0  
- Wed Jul 26 2017 11:47:05 GMT-0400 (EDT)
-[debug] [2017-07-26T15:47:05.777Z] <<< HTTP RESPONSE 200
-[debug] [2017-07-26T15:47:05.777Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/78398501206/clients/_:getWebAppConfig  
- Wed Jul 26 2017 11:47:05 GMT-0400 (EDT)
-[debug] [2017-07-26T15:47:06.225Z] <<< HTTP RESPONSE 200
-[debug] [2017-07-26T15:47:06.240Z] TypeError: Cannot read property 'public' of undefined
+[debug] [2017-07-29T00:36:58.982Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/takeouttonight-a60b0  
+ Fri Jul 28 2017 20:36:58 GMT-0400 (EDT)
+[debug] [2017-07-29T00:36:59.387Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-29T00:36:59.387Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/78398501206/clients/_:getWebAppConfig  
+ Fri Jul 28 2017 20:36:59 GMT-0400 (EDT)
+[debug] [2017-07-29T00:36:59.895Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-29T00:36:59.992Z] TypeError: Cannot read property 'public' of undefined
 [error] 
 [error] Error: An unexpected error has occurred.

@@ -7,15 +7,23 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-var admin = require('firebase-admin');
+var firebase = require('firebase');
 var app = express();
-var serviceAccount = require ("./node_modules/TakeOutTonight/TakeOutTonight-7d991d3a4376.json");
+//var serviceAccount = require ("./node_modules/TakeOutTonight/TakeOutTonight-7d991d3a4376.json");
 
 //firebase setup
-admin.initializeApp({
-   credential: admin.credential.cert(serviceAccount),
-   databaseURL: "https://takeouttonight-a60b0.firebaseio.com"
-    });
+var config = {
+    apiKey: "AIzaSyBeBJ2N_S4V8RusqpFNeGHdweOp9O78gFk",
+    authDomain: "takeouttonight-a60b0.firebaseapp.com",
+    databaseURL: "https://takeouttonight-a60b0.firebaseio.com",
+    projectId: "takeouttonight-a60b0",
+    storageBucket: "takeouttonight-a60b0.appspot.com",
+    messagingSenderId: "78398501206"
+};
+
+firebase.initializeApp(config);
+
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
