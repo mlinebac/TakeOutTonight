@@ -34,3 +34,38 @@
 [debug] [2017-07-29T05:49:14.257Z] TypeError: Cannot read property 'public' of undefined
 [error] 
 [error] Error: An unexpected error has occurred.
+[debug] [2017-07-30T00:21:48.942Z] ----------------------------------------------------------------------
+[debug] [2017-07-30T00:21:48.945Z] Command:      /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-07-30T00:21:48.945Z] CLI Version:  3.9.1
+[debug] [2017-07-30T00:21:48.945Z] Platform:     linux
+[debug] [2017-07-30T00:21:48.945Z] Node Version: v8.1.2
+[debug] [2017-07-30T00:21:48.945Z] Time:         Sat Jul 29 2017 20:21:48 GMT-0400 (EDT)
+[debug] [2017-07-30T00:21:48.945Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-07-30T00:21:48.993Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-07-30T00:21:48.993Z] > authorizing via signed-in user
+[debug] [2017-07-30T00:21:48.996Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/takeouttonight-a60b0  
+ Sat Jul 29 2017 20:21:48 GMT-0400 (EDT)
+[debug] [2017-07-30T00:21:49.617Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-30T00:21:49.620Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/takeouttonight-a60b0/tokens  
+ Sat Jul 29 2017 20:21:49 GMT-0400 (EDT)
+[debug] [2017-07-30T00:21:50.002Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/matt/TakeOutTonight'...
+[info] 
+[debug] [2017-07-30T00:21:50.005Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/takeouttonight-a60b0  
+ Sat Jul 29 2017 20:21:50 GMT-0400 (EDT)
+[debug] [2017-07-30T00:21:50.503Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-30T00:21:50.504Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/78398501206/clients/_:getWebAppConfig  
+ Sat Jul 29 2017 20:21:50 GMT-0400 (EDT)
+[debug] [2017-07-30T00:21:51.034Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[debug] [2017-07-30T00:21:51.070Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/takeouttonight-a60b0  
+ Sat Jul 29 2017 20:21:51 GMT-0400 (EDT)
+[debug] [2017-07-30T00:21:51.490Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-30T00:21:51.491Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/78398501206/clients/_:getWebAppConfig  
+ Sat Jul 29 2017 20:21:51 GMT-0400 (EDT)
+[debug] [2017-07-30T00:21:51.858Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: app
+[info] ✔  hosting: Local server: http://localhost:5004
+
