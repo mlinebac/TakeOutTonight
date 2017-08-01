@@ -40,7 +40,7 @@ html(lang='en')
 
         .col-md-4
           .block
-            div.popup(onclick = 'myFunction()')
+            div.popup(onclick = 'popupFunction()')
               img.popuptext#pasta(src = "./stylesheets/images/cuisine-1854246_640.jpg" width = '500px')
               h2 Dinner Option 2
               p
@@ -55,7 +55,7 @@ html(lang='en')
 
         .col-md-4
           .block
-            div.popup(onclick = 'myFunction()')
+            div.popup(onclick = 'popupFunction()')
               img.popuptext#steak(src = './stylesheets/images/tofu-1713238_640.jpg' width = '500px')
               h2 Dinner Option 3
               p
@@ -70,7 +70,7 @@ html(lang='en')
 
         .col-md-4
           .block
-            div.popup(onclick = 'myFunction()')
+            div.popup(onclick = 'popupFunction()')
               img.popuptext#burger(src = './stylesheets/images/tofu-1713238_640.jpg' width = '500px')
               h2 Dinner Option 3
               p
@@ -128,9 +128,8 @@ html(lang='en')
                   | Message
                 textarea#message.form-control(cols='40', name='message', rows='10')
               .form-group
-                div
-                  button#send-button.btn.btn-primary(name='submitForm')
-                    | Submit
+                button#send-button.btn.btn-primary(name='submitForm' onclick = 'sendForm(name, email, select, radio, message)')
+                  | Submit
 
     #mail.container-fluid
       .row
@@ -139,12 +138,37 @@ html(lang='en')
             span.glyphicon.glyphicon-envelope(aria-hidden='true')
       hr
       footer
-       p Website created by Matt Lineback
+        p Website created by Matt Lineback
     script(src='javascripts/popup.js')
     script(src='javascripts/jquery.min.js')
     script(src='javascripts/bootstrap.min.js')
-    script(src='app.js')
-    link(href='/stylesheets/style.css', rel='stylesheet')
+    script.
+        var config = {
+            apiKey: "AIzaSyBeBJ2N_S4V8RusqpFNeGHdweOp9O78gFk",
+            authDomain: "takeouttonight-a60b0.firebaseapp.com",
+            databaseURL: "https://takeouttonight-a60b0.firebaseio.com",
+            projectId: "takeouttonight-a60b0",
+            storageBucket: "takeouttonight-a60b0.appspot.com",
+            messagingSenderId: "78398501206"
+        };
 
+        firebase.initializeApp(config);
+        var database = firebase.database();
+        sendForm = function(name, email, selection, radio, message) {
+            var userName = document.getElementById("name");
+            var userEmail = document.getElementById("email");
+            var userSelection = document.getElementById("selection");
+            var userRadio = document.getElementById("radio");
+            var userMessage = document.getElementById("message");
+
+            database.ref().set({
+                name: userName,
+                email: userEmail,
+                select: userSelection,
+                radio: userRadio,
+                message: userMessage
+            });
+        }
+    link(href='/stylesheets/style.css', rel='stylesheet')
 
 

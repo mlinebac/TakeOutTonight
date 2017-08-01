@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(name='Take Out Tonight is an app designed for taking dinner orders', content='')
+        meta(name='Matt Lineback', content='')
+        link(rel='icon', href='/public/favicon.ico')
+        title Take Out Tonight
+        link(href='/css/bootstrap.min.css', rel='stylesheet')
+        script(src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js")
+    body
+        .container
+            input#txtEmail(type='email', placeholder='Email')
+            input#txtPassword(type='password', placeholder='Password')
+            button#btnLogin.btn.btn-primary Log in
+            button#btnSighup.btn.btn-success Sign up
+            button#btnLogout.btn.btn-primary Log out
+        script(src='app.js')
+        script(src='/javascripts/login.js')
