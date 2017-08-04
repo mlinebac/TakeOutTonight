@@ -9,8 +9,12 @@ html(lang='en')
     link(rel='icon', href='/public/favicon.ico')
     title Take Out Tonight
     link(href='/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/stylesheets/style.css', rel='stylesheet')
     script(src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js")
+
+
   body
+    pre#object
     #title.container-fluid
       .jumbotron
         h1 TakeOutTonight
@@ -27,10 +31,8 @@ html(lang='en')
         .col-md-4
           .block
             div.popup(onclick = 'popupFunction()')
-              h2 Sweet and Sour Tofu
-              p
-                | Crispy fried tofu tossed in sweet and sour sauce. Served with wok seared broccoli and peppers, and steamed Jasmine Rice
-              p
+              h2#item-1
+              p#item-1-description
             form(target='paypal', action='https://www.paypal.com/cgi-bin/webscr', method='post')
               input(type='hidden', name='cmd', value='_s-xclick')
               input(type='hidden', name='encrypted', value='-----BEGIN PKCS7-----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-----END PKCS7-----\
@@ -70,7 +72,7 @@ html(lang='en')
 
         .col-md-4
           .block
-            div.popup(onclick = 'popupFunction()')
+            div.popup
               img.popuptext#burger(src = './stylesheets/images/tofu-1713238_640.jpg' width = '500px')
               h2 Dinner Option 3
               p
@@ -82,54 +84,59 @@ html(lang='en')
               ')
               input(type='image', src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif', border='0', name='submit', alt='PayPal - The safer, easier way to pay online!')
               img(alt='', border='0', src='https://www.paypalobjects.com/en_US/i/scr/pixel.g', width='1', height='1')
+    .container-fluid
+      .row
+        .center
+          .input-group
+            span.input-group-btn
+              button#name-button.btn.btn-default(type='button', onclick= 'onClick()')
+                |Go!
+            input#input-name.form-control(type = 'text' , placeholder = 'enter name')
     #form.container-fluid
       .row
         .center
-          .col-md-6.col-sm-6.col-xs-12
-            form#order-form.orderForm
-              .form-group
-                label.control-label(for='name')
-                  | Name
-                input#name.form-control(name='name')
-              .form-group
-                label.control-label.requiredField(for='email')
-                  | Email
-                  span.asteriskField
-                    | *
-                input#email.form-control(name='email', type='email')
-              .form-group
-                label.control-label(for='select')
-                  | Select a Choice
-                select#select.form-control(name='select')
-                  option(value='First Choice')
-                    | First Choice
-                  option(value='Second Choice')
-                    | Second Choice
-                  option(value='Third Choice')
-                    | Third Choice
-              .form-group
-                label.control-label
-                  | Select a Choice
-                div#radio
-                  .radio
-                    label.radio
-                      input(name='radio', type='radio', value='First Choice')
-                      |          First Choice
-                  .radio
-                    label.radio
-                      input(name='radio', type='radio', value='Second Choice')
-                      |          Second Choice
-                  .radio
-                    label.radio
-                      input(name='radio', type='radio', value='Third Choice')
-                      |          Third Choice
-              .form-group
-                label.control-label(for='message')
-                  | Message
-                textarea#message.form-control(cols='40', name='message', rows='10')
-              .form-group
-                button#send-button.btn.btn-primary(name='submitForm' onclick = 'sendForm(name, email, select, radio, message)')
-                  | Submit
+          form-group
+            label#Name(for='userName')
+              |Enter Name
+            input#userName.form-control(type='text')
+          form-group
+            label#Email(for='userEmail')
+              |Enter Email
+            input#userEmail.form-control(type='email')
+          form-group
+            label#selectDinner(for='userSelection')
+              |Select Dinner
+            select#userSelection.form-control(type='text')
+              option#dinner1
+              option#dinner2
+              option#dinner3
+              option#dinner4
+          form-group
+            label#selectDate(for='userDateSelection')
+              |Select Day
+            select#userDateSelection.form-control(type='text')
+              option
+                |Monday
+              option
+                |Tuesday
+              option
+                |Wednesday
+              option
+                |Thursday
+              option
+                |Friday
+          form-group
+            label#message(for='userMessage')
+              |Leave a message
+            textarea#userMessage.form-control(rows='3')
+          fieldset.form-group
+            form-check
+              label.form-check.label
+                input.form-check-input(type='checkbox')
+                |Check me out
+          button#userSubmitOrder.btn.btn-primary(type='submit') Submit Order
+
+
 
     #mail.container-fluid
       .row
@@ -139,36 +146,13 @@ html(lang='en')
       hr
       footer
         p Website created by Matt Lineback
-    script(src='javascripts/popup.js')
     script(src='javascripts/jquery.min.js')
     script(src='javascripts/bootstrap.min.js')
-    script.
-        var config = {
-            apiKey: "AIzaSyBeBJ2N_S4V8RusqpFNeGHdweOp9O78gFk",
-            authDomain: "takeouttonight-a60b0.firebaseapp.com",
-            databaseURL: "https://takeouttonight-a60b0.firebaseio.com",
-            projectId: "takeouttonight-a60b0",
-            storageBucket: "takeouttonight-a60b0.appspot.com",
-            messagingSenderId: "78398501206"
-        };
+    script(src='javascripts/node-client.js')
+    script(src='javascripts/popup.js')
 
-        firebase.initializeApp(config);
-        var database = firebase.database();
-        sendForm = function(name, email, selection, radio, message) {
-            var userName = document.getElementById("name");
-            var userEmail = document.getElementById("email");
-            var userSelection = document.getElementById("selection");
-            var userRadio = document.getElementById("radio");
-            var userMessage = document.getElementById("message");
 
-            database.ref().set({
-                name: userName,
-                email: userEmail,
-                select: userSelection,
-                radio: userRadio,
-                message: userMessage
-            });
-        }
-    link(href='/stylesheets/style.css', rel='stylesheet')
+
+
 
 

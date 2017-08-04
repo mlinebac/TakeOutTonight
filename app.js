@@ -4,30 +4,18 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var firebase =  require('firebase');
 var index = require('./routes/index');
 var users = require('./routes/users');
-var firebase = require('firebase');
 var app = express();
 
 //var serviceAccount = require ("./node_modules/TakeOutTonight/TakeOutTonight-7d991d3a4376.json");
 
-//firebase setup
-var config = {
-    apiKey: "AIzaSyBeBJ2N_S4V8RusqpFNeGHdweOp9O78gFk",
-    authDomain: "takeouttonight-a60b0.firebaseapp.com",
-    databaseURL: "https://takeouttonight-a60b0.firebaseio.com",
-    projectId: "takeouttonight-a60b0",
-    storageBucket: "takeouttonight-a60b0.appspot.com",
-    messagingSenderId: "78398501206"
-};
 
-firebase.initializeApp(config);
 
-/*
-var database = firebase.database();
+/*var database = firebase.database();
 
-function sendForm (name, email, selection, radio, message ){
+    sendForm = function(name, email, selection, radio, message ){
     var userName = document.getElementById("name");
     var userEmail = document.getElementById("email");
     var userSelection = document.getElementById("selection");
@@ -43,7 +31,7 @@ function sendForm (name, email, selection, radio, message ){
         radio: userRadio,
         message: userMessage
     });
-}
+};
 
 */
 // view engine setup
@@ -60,7 +48,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
