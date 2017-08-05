@@ -9,31 +9,6 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var app = express();
 
-//var serviceAccount = require ("./node_modules/TakeOutTonight/TakeOutTonight-7d991d3a4376.json");
-
-
-
-/*var database = firebase.database();
-
-    sendForm = function(name, email, selection, radio, message ){
-    var userName = document.getElementById("name");
-    var userEmail = document.getElementById("email");
-    var userSelection = document.getElementById("selection");
-    var userRadio = document.getElementById("radio");
-    var userMessage = document.getElementById("message");
-
-
-
-    database.ref().set({
-        name: userName,
-        email: userEmail,
-        select: userSelection,
-        radio: userRadio,
-        message: userMessage
-    });
-};
-
-*/
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
