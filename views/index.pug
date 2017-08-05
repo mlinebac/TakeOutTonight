@@ -14,7 +14,6 @@ html(lang='en')
 
 
   body
-    pre#object
     #title.container-fluid
       .jumbotron
         h1 TakeOutTonight
@@ -84,23 +83,16 @@ html(lang='en')
               ')
               input(type='image', src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif', border='0', name='submit', alt='PayPal - The safer, easier way to pay online!')
               img(alt='', border='0', src='https://www.paypalobjects.com/en_US/i/scr/pixel.g', width='1', height='1')
-    .container-fluid
-      .row
-        .center
-          .input-group
-            span.input-group-btn
-              button#name-button.btn.btn-default(type='button', onclick= 'onClick()')
-                |Go!
-            input#input-name.form-control(type = 'text' , placeholder = 'enter name')
+
     #form.container-fluid
       .row
         .center
           form-group
-            label#Name(for='userName')
+            label#name(for='userName')
               |Enter Name
             input#userName.form-control(type='text')
           form-group
-            label#Email(for='userEmail')
+            label#email(for='userEmail')
               |Enter Email
             input#userEmail.form-control(type='email')
           form-group
@@ -134,7 +126,7 @@ html(lang='en')
               label.form-check.label
                 input.form-check-input(type='checkbox')
                 |Check me out
-          button#userSubmitOrder.btn.btn-primary(type='submit') Submit Order
+          button#userSubmitOrder.btn.btn-primary(type='submit', onclick = 'onClick()') Submit Order
 
 
 

@@ -6,71 +6,24 @@ firebase.initializeApp({
 });
 
 
-const ref = firebase.database().ref().child("users");
-const userRef = ref.child('order');
+const ref = firebase.database().ref('user orders');
+
 function onClick(){
-ref.set({
-        name: document.getElementById("input-name").value
-    }
-);
-userRef.set({
-    dinner: "tofu",
-    date: "monday"
-
+//place orders to firebase from form
+ref.push({
+    name: document.getElementById("userName").value,
+    email: document.getElementById("userEmail").value,
+    selection: document.getElementById("userSelection").value,
+    date: document.getElementById("userDateSelection").value,
+    message: document.getElementById("userMessage").value,
+    timestamp: firebase.database.ServerValue.TIMESTAMP
 });
-
 }
-/*
-$(function(){
-    var data=[];
-    const ref = firebase.database().ref().child('users');
-    const userRef = ref.child('new-user');
 
-    userRef.on("value", function(snapshot){
-        console.log(snapshot.val());
-        data = snapshot.val();
-    });
-
-    $('#submit').submit(function(event) {
-        var $form = $(this);
-        console.log("submit to firebase");
-
-        $form.find("#saveFrom").prop('disabled', true);
-
-
-        var email = $('#email').val();
-        console.log(email);
-
-        var selection = $('#selection').val();
-        console.log(selection);
-
-        var radio = $('#radio').val();
-        console.log(radio);
-
-        var message = $('#message').val();
-        console.log(message);
-
-        var newUserSubmit = {
-            "name": name,
-            "email": email,
-            "selection": selection,
-            "radio": radio,
-            "message": message
-        }
-
-        data.push(newUserSubmit);
-        console.log(data);
-        userRef.set(data);
-
-        return false;
-    });
-});
-
-*/
 // places items name and description from firebase
 const dbRefItem = firebase.database().ref().child('items');
 const dbRefItemName = dbRefItem.child('item-1/name');
-const dbRefItemDiscription = dbRefItem.child('item-1/description');
+const dbRefItemDescription = dbRefItem.child('item-1/description');
 
 dbRefItemName.on('value', snap => {
     const h1 = document.getElementById('item-1');
@@ -80,7 +33,7 @@ dbRefItemName.on('value', snap => {
     selection.innerText = snap.val();
 });
 
-dbRefItemDiscription.on('value', snap => {
+dbRefItemDescription.on('value', snap => {
     const p = document.getElementById('item-1-description');
     p.innerText = snap.val();
     console.log(snap.val())
