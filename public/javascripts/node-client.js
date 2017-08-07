@@ -1,5 +1,7 @@
 
 
+
+
 firebase.initializeApp({
     serviceAccount: "./node_modules/TakeOutTonight/TakeOutTonight-7d991d3a4376.json",
     databaseURL: "https://takeouttonight-a60b0.firebaseio.com"
@@ -76,7 +78,7 @@ dbRefItemFourDescription.on('value', snap => {
 });
 
 //places order to firebase from form
-function onClick(){
+function onClick() {
     const ref = firebase.database().ref('user orders');
     ref.push({
         name: document.getElementById("userName").value,
@@ -87,6 +89,7 @@ function onClick(){
         timestamp: firebase.database.ServerValue.TIMESTAMP
     });
 }
+
 
 
 
