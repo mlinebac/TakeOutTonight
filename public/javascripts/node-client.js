@@ -88,6 +88,9 @@ function onClick() {
         message: document.getElementById("userMessage").value,
         timestamp: firebase.database.ServerValue.TIMESTAMP
     });
+
+    var popup = document.getElementById("formSubmitted");
+    popup.classList.toggle("show");
 }
 
 

@@ -39,12 +39,20 @@ body {
     background:black;
     background: linear-gradient(black, #444444 );
     width: 960px;
-    padding-top: 5%;
+    padding-top: 3%;
+}
+
+#order-form{
+    margin: 0 auto;
+    width: 50%;
+    color: whitesmoke;
+    margin-bottom: 2%;
 }
 
 .center{
     margin: 0 auto;
-    width:70%;
+    width:50%;
+    color: whitesmoke;
 }
 
 #mail.container-fluid{
@@ -53,39 +61,5 @@ body {
     padding-left: 3%;
     padding-right:3%;
     background-color: #444444;
-	}
-
-.popup {
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
-/* The actual popup */
-.popuptext {
-    visibility: hidden;
-    position: absolute;
-    z-index: 1;
-    opacity: 1;
-    left:20%
-}
-/* Toggle this class - hide and show the popup */
-.show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-}
