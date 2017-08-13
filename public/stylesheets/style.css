@@ -1,7 +1,7 @@
 body {
  	font-family: Calibri, serif;
  	color: whitesmoke;
-    background: dimgray radial-gradient(black, whitesmoke);
+    background: dimgray radial-gradient(black, whitesmoke) repeat-x;
 }
 
 #title.container-fluid{
@@ -45,14 +45,12 @@ body {
 #order-form{
     margin: 0 auto;
     width: 50%;
-    color: whitesmoke;
     margin-bottom: 2%;
 }
 
 .center{
     margin: 0 auto;
     width:50%;
-    color: whitesmoke;
 }
 
 #mail.container-fluid{
