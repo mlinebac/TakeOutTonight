@@ -11,13 +11,13 @@ body {
 	}
 
 .jumbotron{
-  	background: dimgray;
-  	opacity: 0.85;
+    background: dimgray;
+    opacity: 0.85;
     font-family: Calibri, serif;
-  	color: whitesmoke;
-    padding: 8%;
-    margin:4%;
-	}
+    color: whitesmoke;
+    margin-top:2%;
+}
+
 
 #dinner.container-fluid{
     background-image: url(images/cooking-1013455.png);
@@ -33,6 +33,7 @@ body {
     margin-left:3.5%;
     margin-right:2.5%;
     margin-top:4%;
+
 }
 
 #form.container-fluid{
@@ -40,12 +41,6 @@ body {
     background: linear-gradient(black, #444444 );
     width: 960px;
     padding-top: 3%;
-}
-
-#order-form{
-    margin: 0 auto;
-    width: 50%;
-    margin-bottom: 2%;
 }
 
 .center{
