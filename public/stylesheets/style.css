@@ -15,9 +15,8 @@ body {
     opacity: 0.85;
     font-family: Calibri, serif;
     color: whitesmoke;
-    margin-top:2%;
+    margin-top:3%;
 }
-
 
 #dinner.container-fluid{
     background-image: url(images/cooking-1013455.png);
