@@ -61,11 +61,12 @@ dbRefItemFour.on('value', snap => {
     $('#item-4').html(dbRefItemFour.name);
     $('#item-4-description').html(dbRefItemFour.description);
     $('#item-4-price').html("$" + dbRefItemFour.price);
-    $('#dinner4').html (function() {
+    $('#dinner4').html(function() {
         var unitPrice = dbRefItemFour.price;
         var unitName = dbRefItemFour.name;
         return ("$" + unitPrice + " " + unitName);
     });
+    $('.selectpicker').selectpicker('refresh');
 });
 
 
