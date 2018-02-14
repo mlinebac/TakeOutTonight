@@ -10,8 +10,7 @@ body {
 	}
 
 .jumbotron{
-    background: dimgray;
-    opacity: 0.85;
+    background-color:rgba(105, 105, 105, .85) ;
     font-family: Calibri, serif;
     text-align: center;
     color: whitesmoke;
@@ -38,8 +37,7 @@ body {
     margin-right: -4px;
 }
 .col-md-4{
-    background: dimgray;
-    opacity: 0.85;
+    background-color:rgba(105, 105, 105, .85);
     font-family: Calibri, serif;
     text-align: center;
     color: whitesmoke;
@@ -50,8 +48,7 @@ body {
 }
 
 #form.container-fluid{
-    background: dimgray;
-    opacity: 0.85;
+    background-color:rgba(105, 105, 105, .85);
     font-family: Calibri, serif;
     color: whitesmoke;
     border-radius:5px;

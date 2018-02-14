@@ -118,20 +118,20 @@ html(lang='en')
                   input.form-check-input(type='checkbox')
                   |Check me out
             button#userSubmitOrder.btn.btn-primary(type='button', onclick = 'onClick()', data-toggle="modal", data-target="#myModal") Submit Order
-            #myModal.modal.fade(role='dialog')
-              .modal-dialog
-                .modal-content
-                  .modal-header
-                    button.close(type='button', data-dismiss='modal') ×
-                    h4.modal-title(style='color: black;') Order Submitted
-                  .modal-body
-                    p#item-selected(style='color: black;')
-                    p#date-selected(style='color: black;')
-                    p#price-selected(style='color: black;')
-                    p(style='color: blue; font-weight: bold;') Thank you for your order!
-                  .modal-footer
-                    a.btn.btn-success(href="https://cash.me/$MattLineback",role='button') Pay Here
-                    button.btn.btn-default(type='button', data-dismiss='modal') Close
+      #myModal.modal.fade(role='dialog')
+        .modal-dialog
+          .modal-content
+            .modal-header
+              button.close(type='button', data-dismiss='modal') ×
+              h4.modal-title(style='color: black;') Order Submitted
+            .modal-body
+              p#item-selected(style='color: black;')
+              p#date-selected(style='color: black;')
+              p#price-selected(style='color: black;')
+              p(style='color: blue; font-weight: bold;') Thank you for your order!
+            .modal-footer
+              a.btn.btn-success(href="https://cash.me/$MattLineback",role='button') Pay Here
+              button.btn.btn-default(type='button', data-dismiss='modal') Close
 
       #mail.container-fluid
         .row
@@ -141,7 +141,7 @@ html(lang='en')
         hr
         footer
           p Website created by &nbsp
-            a(href="https://www.mattlineback.me", title="Matt Lineback", style="color:whitesmoke;") Matt Lineback
+            a(href="https://www.mattlineback.me", title="mattlineback.me", style="color:#5BC0DE;") Matt Lineback
     script(src='javascripts/menu.js')
     script(src='javascripts/form.js')
     link(rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css')
