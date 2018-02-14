@@ -44,7 +44,7 @@ body {
     text-align: center;
     color: whitesmoke;
     border-radius:5px;
-    margin: 15px 15px 5px 5px;
+    margin: 15px 5px 5px 5px;
     padding: 5px 15px 5px 15px;
 
 }
@@ -83,11 +83,21 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    body{
+        background-color:black;
+    }
+    .jumbotron{
+        margin: 25px 0px 25px 0px;
+    }
+
     #title.container-fluid {
-        background-size:480px;
+        background-size:contain;
     }
     #dinner.container-fluid{
-        background-size:480px;
+        background-size:contain;
+    }
+    #form.container-fluid{
+        margin:25px 0px 25px 0px;
     }
 }
 
