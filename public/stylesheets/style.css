@@ -75,19 +75,19 @@ body {
 
 @media screen and (max-width: 768px) {
     #title.container-fluid {
-        background-size:768px 100%;
+        background-size:cover;
     }
     #dinner.container-fluid{
-        background-size:768px 100%;
+        background-size:cover;
     }
 }
 
 @media screen and (max-width: 480px) {
     #title.container-fluid {
-        background-size:480px 100%;
+        background-size:480px;
     }
     #dinner.container-fluid{
-        background-size:480px 100%;
+        background-size:480px;
     }
 }
 
