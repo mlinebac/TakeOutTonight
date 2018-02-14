@@ -55,7 +55,7 @@ body {
     font-family: Calibri, serif;
     color: whitesmoke;
     border-radius:5px;
-    margin:5% 10% 5% 10%;
+    margin:50px 25px 50px 25px;
     padding: 0px 10px 25px 10px;
 }
 
@@ -71,5 +71,16 @@ body {
     padding-top: 5%;
     padding-left: 3%;
     padding-right:3%;
+}
+@media screen and (max-width: 768px) {
+    #title {
+        background-size:contain;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #title {
+        background-size:contain;
+    }
 }
 
