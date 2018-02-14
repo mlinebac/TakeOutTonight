@@ -43,10 +43,10 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="86" column="29" lean-forward="false" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
+            <state relative-caret-position="149">
+              <caret line="80" column="34" lean-forward="false" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
               <folding>
-                <marker date="1518574982397" expanded="true" signature="5:82" ph="{...}" />
+                <marker date="1518575202362" expanded="true" signature="5:82" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -652,12 +652,12 @@
       <workItem from="1510503733728" duration="588000" />
       <workItem from="1513193165145" duration="589000" />
       <workItem from="1518534985767" duration="4705000" />
-      <workItem from="1518573382015" duration="1600000" />
+      <workItem from="1518573382015" duration="1818000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169783000" />
+    <option name="totallyTimeSpent" value="170001000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="24" width="1317" height="672" extended-state="0" />
@@ -1089,10 +1089,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="86" column="29" lean-forward="false" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
+        <state relative-caret-position="149">
+          <caret line="80" column="34" lean-forward="false" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
           <folding>
-            <marker date="1518574982397" expanded="true" signature="5:82" ph="{...}" />
+            <marker date="1518575202362" expanded="true" signature="5:82" ph="{...}" />
           </folding>
         </state>
       </provider>
