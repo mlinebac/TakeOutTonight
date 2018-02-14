@@ -72,21 +72,22 @@ body {
     padding-left: 3%;
     padding-right:3%;
 }
+
 @media screen and (max-width: 768px) {
-    #title {
-        background-size:auto;
+    #title.container-fluid {
+        background-size:cover;
     }
-    #dinner{
-        background-size:auto;
+    #dinner.container-fluid{
+        background-size:cover;
     }
 }
 
 @media screen and (max-width: 480px) {
-    #title {
-        background-size:auto;
+    #title.container-fluid {
+        background-size:cover;
     }
-    #dinner{
-        background-size:auto;
+    #dinner.container-fluid{
+        background-size:cover;
     }
 }
 
