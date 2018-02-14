@@ -74,13 +74,19 @@ body {
 }
 @media screen and (max-width: 768px) {
     #title {
-        background-size:contain;
+        background-size:auto;
+    }
+    #dinner{
+        background-size:auto;
     }
 }
 
 @media screen and (max-width: 480px) {
     #title {
-        background-size:contain;
+        background-size:auto;
+    }
+    #dinner{
+        background-size:auto;
     }
 }
 
